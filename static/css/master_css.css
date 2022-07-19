@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 html,
 body,
 header,
 #intro {
     height: 100%;
+   
+}
+body{
+  font-family: 'Poppins', sans-serif !important;
+}
+.body-app{
+  font-family: 'Poppins', sans-serif !important;
+  
 }
 
 #intro {
