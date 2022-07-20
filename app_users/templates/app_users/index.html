@@ -53,7 +53,7 @@
                             <div class="card text-center" style="width: 18rem;">
                               <div class="card-body">
                                 <h4 class="card-title" style="color:#ff5722;">{{standard.name}}</h4>
-                                <p class="card-text">{{standard.description|truncatechars:75}}</p>
+                                <!-- <p class="card-text">{{standard.description|truncatechars:75}}</p> -->
                                 {% if user.is_authenticated %}
                                 <a href="{% url 'curriculum:subject_list' slug=standard.slug %}" class="btn btn-primary" style="background-color:#00bcd4;">Start Learning</a>
                                 {%else%}
