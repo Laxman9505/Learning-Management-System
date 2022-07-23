@@ -23,13 +23,9 @@ body{
 }
 
 
-.bg-light{
-  background-color:transparent !important;
-  transition:0.5s ease;
-  }
 
 .bg-light.scrolled{
-  background-color: #1D2331 !important;
+  background-color: #fff !important;
 }
 
 
@@ -108,6 +104,8 @@ hr{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 130px !important;
+    overflow: hidden;
 }
 /* breadcrumb class */
 /* Style the list */
@@ -126,7 +124,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: #ff5722;
+  color: #9A5DE4 !important;
   content: "/\00a0";
 }
 

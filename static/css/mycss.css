@@ -112,3 +112,10 @@
     color: #ffffff;
     background-color: #252525;
 }
+#page-intro {
+    height: 130px !important;
+}
+.navbar{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #FFFFFF !important;
+}
