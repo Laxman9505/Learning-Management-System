@@ -192,4 +192,6 @@
     font-style: italic;
     color: #444;
   }
-  
+  #recent-actions-module{
+    display: none !important;
+  }
