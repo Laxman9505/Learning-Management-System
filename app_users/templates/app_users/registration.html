@@ -8,19 +8,12 @@
 {% endblock %}
 {% block content %}
 
-<section class="text-center mt-4">
-              <h2 class="mb-5 font-weight-bold" style="color:#ff5722;">Registration</h2>
+<section class="text-center mt-10" style="margin-top: 50px; ">
+              <h2 class="mb2 font-weight-bold" style="color:black; margin-top: 100px;">Registration</h2>
+              <p style="font-size: 14px;">By Registering, You Agree to our terms and condition !</p>
               <!-- class row for description-->
               <div class="row d-flex justify-content-center mb-4">
-                <!-- class column -->
-                <div class="col-md-8">
-                  <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate
-                                    hic
-                                    provident nulla repellat
-                                    facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis
-                                    est
-                                    sit pariatur.</p>
-                </div>
+                
               </div>
               <div class="row d-flex justify-content-center mb-4">
 
@@ -30,14 +23,14 @@
   {% if registered %}
     <h1>Thank you for registering</h1>
   {% else %}
-      <h3>Fill the form: </h3>
-      <form method="post" enctype="multipart/form-data">
+
+      <form class="register-form" method="post" enctype="multipart/form-data" style="width: 50%; margin-top: -2rem; margin: auto; margin-top: -2rem; padding: 20px 30px; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;">
         {% csrf_token %}
         {{ user_form|crispy }}
         {{ profile_form|crispy }}
-        <div class="row justify-content-center">
+        <div class="row justify-content-flex-start">
         <div class="col-md-6">
-        <input type="submit" value="Register" class="btn btn-primary btn-block">
+        <input type="submit" value="Register" class="btn btn-primary btn-block" style="background-color: #9B5DE5; border: none; width: 50%; border-radius: 13px; margin-top: 1rem; padding: 10px 0;">
         </div>
         </div>
       </form>

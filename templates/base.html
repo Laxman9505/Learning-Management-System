@@ -14,8 +14,13 @@
   </head>
   <body class="body-app">
     <!-- navigation bar -->
-              <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top scrolling-navbar" style="display: flex; align-items: center;justify-content: center;">
-                <div class="container" >
+              <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top scrolling-navbar" style="display: flex; align-items: center;justify-content: space-between;">
+
+               <a href="{% url 'index' %}" style="margin-left: 4rem;" >
+                <img src="../media/Images/logo.png" alt="" style="height: 50px; width: 50px;">
+              </a>
+             
+                <div class="container" style=" width: 40%; justify-self: flex-end;" >
                       <a class="navbar-brand" href="{% url 'index' %}" style="color:black; font-size: 17px;"  >Home</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +56,13 @@
                         </ul>
                       </div>
                 </div>
+                <a href="{% url 'admin:index' %}"   class="btn px-3 py-2 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #9B5DE5; font-size: 14px;">Admin</a>
+                
+               
+             
+
+           
+             
               </nav>
           {% block image_block %}
           {% endblock %}

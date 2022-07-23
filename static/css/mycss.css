@@ -119,3 +119,9 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #FFFFFF !important;
 }
+
+@media screen  and (max-width:756px){
+    .register-form{
+        width: 100% !important;
+    }
+}
