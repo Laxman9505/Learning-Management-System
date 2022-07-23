@@ -33,7 +33,7 @@
     <!-- section 1 for standards-->
 
     <section class="text-center">
-                  <h2 class="mb-5 font-weight-bold" style="color:#9A5DE4;">Latest Classes</h2>
+                  <h2 class="mb-5 font-weight-bold" style="color:black;">Latest Classes</h2>
                   <!-- class row for description-->
                   <div class="row d-flex justify-content-center mb-4">
                     <!-- class column -->
@@ -42,34 +42,36 @@
                     </div>
                   </div>
                   <!-- class row2 for cards -->
-                  <div class="row">
-                    
-                          {% for standard in standards %}
-                          <div class="col-md-4 d-flex mb-5 justify-content-center" >
-                            <div class="card text-center" style="width: 18rem;">
-                              <div class="card-body" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
-                                <h4 class="card-title" style="color:#9A5DE4">{{standard.name}}</h4>
-                                <!-- <p class="card-text">{{standard.description|truncatechars:75}}</p> -->
-                                {% if user.is_authenticated %}
-                                <a href="{% url 'curriculum:subject_list' slug=standard.slug %}" class="btn btn-primary" style="background-color:#363F4A; border: none;">Start Learning</a>
-                                {%else%}
-                                <p>Register or login to start learning</p>
-                                <a href="{% url 'user_login' %}" class="btn btn-primary" style="background-color:#363F4A; border: none;">Login</a>
-                                <a href="{% url 'register' %}" class="btn btn-primary" style="background-color:#363F4A; border: none;">Register</a>
-                                {%endif%}
-                              </div>
-                            </div>
-                          </div>
-                          {% endfor %}
-                  </div>
+                  <div class="row" style="margin-top: -3rem;">
+                    {% for standard in standards %}
+                    <div class="col-md-4 d-flex mb-0 justify-content-center">
+                      <div class="containerss" style="margin-right:2rem">
+    
+                        <h2 class="h2" style="font-size: 18px;">{{standard.name}}</h2>
+                        <p class="second" style="font-size: 16px;">
+                          {{standard.description|truncatechars:75}}
+                        </p>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'curriculum:subject_list' slug=standard.slug %}" class="btn btn-primary" style="background-color:#9B5DE5; border: 1px solid #9B5DE5;">See Lessons</a>
+                        {%else%}
+                        <p>Register or login to start learning</p>
+                        <a href="{% url 'user_login' %}" class="btn btn-std" style="background-color:white; color:#9B5DE5 ; border: 1px solid #9B5DE5;">Login</a>
+                        <a href="{% url 'register' %}" class="btn btn-primary" style="background-color:#9B5DE5; border: 1px solid #9B5DE5;">Register</a>
+                        {%endif%}
+                  </div>  
+                   
+                    </div>
+                    {% endfor %}
+            </div>
+                
     </section>
-    <hr class="my-5" style="color:#9A5DE4;">
+    <hr class="my-5" style="color:black;">
     <!-- Section 2: Faculty Members -->
 
     <section id="testimonials">
       <!--heading--->
       <div class="testimonial-heading">
-          <span style="text-transform: capitalise; font-size: 28px; margin-top: -3rem; color: #9A5DE4;">Testimonials</span>
+          <span style="text-transform: capitalise; font-size: 28px; margin-top: -3rem; color: black; letter-spacing: 0px; text-transform: capitalize;">Testimonials</span>
           <p style="color: #A3A9AD;">Here are what our student Says about this learning management system.</p>
       </div>
       <!--testimonials-box-container------>
