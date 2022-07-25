@@ -138,10 +138,10 @@
   
   .first,
   .h2 {
-    background-color: #00bcd4;
+    background-color: rgb(236, 232, 232);
     position: relative;
     left: -40px;
-    color: #fff;
+    color: black;
     font-weight: bold;
     
   }
@@ -198,3 +198,113 @@
   .app-app_users.module{
     display: none !important;
   }
+  .card-left,
+.card-right {
+  width: 476px;
+  height: 569px;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+img {
+  width: 416px;
+  height: 280px;
+  object-fit: cover;
+}
+/* left-card */
+.left-h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #22215b;
+}
+.p-date {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #22215b;
+}
+.p-text {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #22215b;
+  opacity: 60%;
+}
+.card-footer {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-footer .card-footer__first {
+  font-size: 14px;
+  font-weight: bold;
+  color: #22215b;
+}
+.card-footer .card-footer__second {
+  background-color: #eef7fe;
+  padding: 6px 26px 4px 26px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #22215b;
+}
+/* right-card */
+.card-right {
+  position: relative;
+}
+.abs-btn {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+.abs-btn a {
+  padding: 23px;
+  background-color: #22215b;
+  border-radius: 50%;
+}
+.abs-btn a img {
+  width: 14px;
+  height: 14px;
+}
+.right-h2 {
+  font-size: 30px;
+  color: #22215b;
+}
+.p-text-right {
+  margin-bottom: 40px;
+}
+.todocard {
+  background-color: #eef7fe;
+  border-radius: 10px;
+  padding: 14px 31px 14px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.todocard p {
+  font-weight: 700;
+  color: #22215b;
+}
+.todocard-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.todocard span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todocard .delete img {
+  width: 16px;
+  height: 21px;
+}
+.todocard span img {
+  width: 15px;
+  height: 8.5px;
+}
