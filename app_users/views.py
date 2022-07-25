@@ -1,3 +1,4 @@
+from urllib import request
 from django.shortcuts import render
 from app_users.forms import UserForm, UserProfileInfoForm
 from django.http import HttpResponse, HttpResponseRedirect
@@ -35,11 +36,6 @@ def user_logout(request):
     logout(request)
     return HttpResponseRedirect(reverse('index'))
 
-
-# Create your views here.
-# def index(request):
-#     return render(request,'app_users/index.html')
-
 def register(request):
 
     registered = False
@@ -70,8 +66,8 @@ def register(request):
                              'profile_form':profile_form})
 
 class HomeView(TemplateView):
+    # print(request.user)
     template_name = 'app_users/index.html'
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         standards = Standard.objects.all()
@@ -84,3 +80,7 @@ class ContactView(CreateView):
     model = Contact
     fields = '__all__'
     template_name = 'app_users/contact.html'
+
+
+def result(request):
+    return render(request, 'app_users/result.html')
