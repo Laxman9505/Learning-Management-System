@@ -321,3 +321,6 @@ img {
     max-width : 900px;
     min-height: 300px;
 }
+.breadcrumbs{
+  display: none !important;
+}
