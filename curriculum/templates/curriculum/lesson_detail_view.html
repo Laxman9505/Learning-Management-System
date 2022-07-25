@@ -20,13 +20,7 @@
         </blockquote>
     </div>
     <!-- video -->
-    <div class="row d-flex justify-content-center mb-3">
-      <div id="player-overlay">
-            <video controls>
-                <source src="{{lessons.video_url}}"  type="video/mp4">
-              </video>
-      </div>
-    </div>
+ 
     <!-- download cards -->
     <div class="row d-flex justify-content-center mb-3 mt-3">
       <!-- download presentations -->
@@ -37,7 +31,7 @@
                       {% if lessons.ppt %}
                       <p class="card-text">Download presentations from the lecture</p>
                       <a href="{{lessons.ppt.url}}" download>
-                      <button type="button" class="button-les"><span>Get Files</span></button>
+                      <button type="button" class="button-les" style="background-color:#9B5DE5 ;"><span>Get Files</span></button>
                       </a>
                       {% else %}
                       <p class="card-text" > No PPT available</p>
@@ -54,7 +48,7 @@
                       {% if lessons.Notes %}
                       <p class="card-text">Download notes from the lecture</p>
                       <a href="{{lessons.Notes.url}}" download>
-                      <button type="button" class="button-les"><span>Get Files</span></button>
+                      <button type="button" class="button-les" style="background-color: #9B5DE5;"><span>Get Files</span></button>
                       </a>
                       {% else %}
                       <p class="card-text">Notes not available</p>
@@ -63,18 +57,8 @@
                     </div>
                   </div>
                 </div>
-      <!-- download video -->
-                <div class="col-md-4 mb-4 mt-4">
-                  <div class="card box-shadow-hover">
-                    <div class="card-body">
-                      <h5 class="card-title">Download Video</h5>
-                      <p class="card-text">Download Video from the lecture</p>
-                      <a href="{{lessons.video_url}}" download>
-                      <button type="button" class="button-les"><span>Get Files</span></button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+   
+               
     </div>
 
 </section>

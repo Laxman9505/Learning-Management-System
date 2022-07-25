@@ -324,3 +324,8 @@ img {
 .breadcrumbs{
   display: none !important;
 }
+@media screen and (max-width:756px) {
+  #home-heading{
+    font-size: 40px !important;
+  }
+}

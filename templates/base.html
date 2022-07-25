@@ -58,12 +58,12 @@
                 </div>
                 {% if user.is_authenticated %}
                 <img src="https://cdn.vectorstock.com/i/1000x1000/30/97/flat-business-man-user-profile-avatar-icon-vector-4333097.webp" alt="" style="height: 50px; width: 50px;">
-                <span style="margin-right: 2rem;">{{user.first_name}}</span>
+                <span style="margin-right: 2rem;"> Welcome,   {{user.first_name}} {{user.last_name}} </span>
             {% else %}
                
             {% endif %}
                
-                <a href="{% url 'admin:index' %}"   class="btn px-3 py-2 text-white mt-3 mt-sm-0" style="border-radius: 30px; background-color: #9B5DE5; font-size: 14px;">Admin</a>
+       
                 
                
              
